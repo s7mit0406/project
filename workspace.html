@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workspace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h3>Online Users</h3>
+        <div id="users"></div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="editor-container">
+        <textarea id="editor"></textarea>
+    </div>
+
+    <div class="chat-container">
+        <div id="chatBox"></div>
+        <input type="text" id="messageInput" placeholder="Type message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
